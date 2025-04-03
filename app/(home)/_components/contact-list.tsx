@@ -20,7 +20,7 @@ const ContactList: FC<{contacts: IUser[]}>  = ({contacts}) => {
         };
 
         return ( 
-            <div className={cn('flex items-center justify-between p-2 cursor-pointer hover:bg-secondary/50', currentContact?._id === contact._id && 'bg-secondary/50')} onClick={onChat}>
+            <div className={cn('flex items-center justify-between p-2 cursor-pointer hover:bg-secondary/50', currentContact?._id === contact._id && 'dark:bg-gray-900/50')} onClick={onChat}>
                 <div className='flex items-center gap-2'>
                     <div className='relative'>
                         <Avatar>
@@ -44,7 +44,7 @@ const ContactList: FC<{contacts: IUser[]}>  = ({contacts}) => {
 
     return (
         <>
-            <div className='flex items-center p-2 gap-2 border-b'>
+            <div className='flex items-center p-2 gap-2 h-[8vh] dark:bg-gray-900 border-b'>
                 <Settings />
                 <div className='w-full'>
                     <Input placeholder='Search...' className='w-full bg-secondary h-9' />
